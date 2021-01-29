@@ -1,0 +1,149 @@
+/*color*/
+$color1:#0d1b2a;
+$color2:#1b263b;
+$color3:#415a77;
+$color4:#778da9;
+$color5:#e0e1dd;
+
+/*SCSS*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color5;
+}
+
+.container {
+    width: 780px;
+    margin: 0 auto;
+    background-color: $color4;
+    box-shadow: 0px 9px 13px 5px;
+}
+
+.header {
+    padding: 45px 0 20px 40px;
+
+
+    a {
+        color: $color5;
+        text-decoration: none;
+        font-size: 2.5rem;
+    }
+}
+
+.menu {
+    background-color: $color3;
+    padding: 6px 0 6px 40px;
+
+    a {
+        color: $color5;
+        text-decoration: none;
+        padding: 0 20px 0 0;
+        font-size: 1.2rem;
+    }
+
+    a:hover {
+        color: $color1;
+    }
+}
+
+aside {
+    float: left;
+    width: 180px;
+    padding: 30px 0 0 40px;
+
+    h2 {
+        color: $color5;
+        font-size: 1.5rem;
+    }
+}
+
+.main {
+    margin: 0 0 0 180px;
+    padding: 30px 40px 30px 0px;
+    color: $color5;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+footer {
+    padding: 6px 40px 6px 40px;
+    background-color: $color3;
+    color: $color5;
+    font-size: 0.8rem;
+
+    a {
+        text-decoration: none;
+        color: $color1;
+    }
+
+    a:hover {
+        color: $color5;
+    }
+}
+
+.separator {
+    color: $color1;
+    font-size: 1.2rem;
+}
+
+#home_img {
+    img {
+        width: 100%;
+    }
+}
+
+/**************************about***************************/
+
+#about-page {
+    #home_img {
+        img {
+            width: 100%;
+            float: left;
+        }
+    }
+
+    .description {
+        clear: both;
+    }
+    .main{
+        p{
+            margin-top: 20px;
+            line-height: 1.5rem;
+        }
+    }
+}
+/**************************contact***************************/
+#contact{
+    #form{
+        width: 500px;
+        padding: 10px;
+        margin: 0 auto;
+        input{
+            width: 100%;
+            border-radius: 5px;
+            height: 1.5rem;
+            background-color: $color5;
+            border: 0px;
+        }
+        #message{
+            width: 100%;
+            border-radius: 5px;
+            background-color: $color5;
+            margin-bottom: 10px;
+        }
+        #button{
+            width: 100%;
+            border-radius: 5px;
+            height: 2rem;
+            background-color: $color2;
+            color: $color5;
+        }
+    }
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
